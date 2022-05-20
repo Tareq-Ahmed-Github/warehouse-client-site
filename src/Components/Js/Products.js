@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Products = () => {
-    const [prods] = [
-        {
-            
-        }
-    ]
+const [items, setItems] = useState([]);
+useEffect(() => {
+    fetch('items.json')
+        .then(res => res.json())
+        .then(data => setItems(data))
+}, []);
+
     return (
         <div>
-            <h2>Products</h2>
+            <h2>{items?.length}</h2>
         </div>
     );
 };
