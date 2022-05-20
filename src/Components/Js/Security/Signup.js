@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import Social from './Social';
 
 const Signup = () => {
     return (
@@ -19,7 +20,7 @@ const Signup = () => {
                 <div className=''>
                     <p className='text-bold'>Or</p>
                     <p className='text-muted'>Sign up with</p>
-                    <Button className='mb-5 rounded-pill bg-light'><img className='w-25' src="https://i.ibb.co/4mn5h7R/download-removebg-preview.png" alt="" /></Button>
+                    <Social></Social>
                 </div>
             </Form>
         </div>
