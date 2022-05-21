@@ -4,7 +4,7 @@ import './Product';
 const Products = () => {
     const [Products] = useProducts();
     return (
-        <div>
+        <div className='bg-black'>
             <h2 className='text-primary text-center m-4'>AVAILABLE BIKES</h2>
             <div className='products'>
                 {

@@ -7,8 +7,8 @@ const HomeProducts = () => {
     const homeProducts = Products.slice(0, 6);
 
     return (
-        <div id='homeproducts'>
-            <h2 className='text-warning my-5 mx-auto'>INVENTORY</h2>
+        <div id='homeproducts' className='bg-black pb-5'>
+            <h2 className='text-warning py-5 mx-auto'>INVENTORY</h2>
             <div className='products w-75 mx-auto'>
 
                 {

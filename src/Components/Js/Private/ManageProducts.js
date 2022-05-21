@@ -20,8 +20,8 @@ const ManageProducts = () => {
         }
     }
     return (
-        <div>
-            <Table striped hover className='m-5 w-75 mx-auto table-bordered border-dark'>
+        <div className='bg-black pt-5'>
+            <Table striped hover className='w-75 mx-auto table-bordered border-dark bg-white'>
                 <thead>
                     <tr className='text-center row bg-warning'>
                         <th className='col-3'>Name</th>
@@ -32,7 +32,7 @@ const ManageProducts = () => {
                 </thead>
                 {
                     Products?.map(Product =>
-                        <tbody key={Product._id}>
+                        <tbody key={Product._id} className='w-100'>
                             <tr className='row fw-bold'>
                                 <td className='text-center col-3'>{Product.name.slice(0, 30)}</td>
                                 <td className='text-center col-3 w-25'><img className='w-100' src={Product.picture} alt="" /></td>
