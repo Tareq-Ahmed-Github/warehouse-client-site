@@ -35,7 +35,7 @@ const ManageProducts = () => {
                         <tbody key={Product._id}>
                             <tr>
                                 <td className='text-center'>{Product.name.slice(0, 30)}</td>
-                                <td className='text-center'><img className='table-img' src={Product.picture} alt="" /></td>
+                                <td className='text-center'><img src={Product.picture} alt="" /></td>
                                 <td className='text-center'>{Product.quantity}</td>
                                 <td className='text-center'><Button onClick={() => handleDelete(Product._id)} variant="outline-dark rounded-pill fw-bold">DELETE</Button></td>
                             </tr>
