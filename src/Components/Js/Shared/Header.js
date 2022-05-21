@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Container>
+                <Container hover>
                     <Navbar.Brand href="/#home">BikeZone</Navbar.Brand>
                     <Nav className="me-auto">
                         <Link className='me-2 text-decoration-none text-warning' to='/'>Home</Link>

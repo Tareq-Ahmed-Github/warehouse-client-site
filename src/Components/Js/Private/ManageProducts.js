@@ -21,30 +21,30 @@ const ManageProducts = () => {
     }
     return (
         <div>
-            <Table striped bordered hover>
+            <Table striped hover className='m-5 w-75 mx-auto table-bordered border-dark'>
                 <thead>
-                    <tr className='text-center'>
-                        <th>Name</th>
-                        <th>Photo</th>
-                        <th>Quantity</th>
-                        <th>Delete</th>
+                    <tr className='text-center row bg-warning'>
+                        <th className='col-3'>Name</th>
+                        <th className='col-3'>Photo</th>
+                        <th className='col-3'>Quantity</th>
+                        <th className='col-3'>Delete</th>
                     </tr>
                 </thead>
                 {
                     Products?.map(Product =>
                         <tbody key={Product._id}>
-                            <tr>
-                                <td className='text-center'>{Product.name.slice(0, 30)}</td>
-                                <td className='text-center'><img src={Product.picture} alt="" /></td>
-                                <td className='text-center'>{Product.quantity}</td>
-                                <td className='text-center'><Button onClick={() => handleDelete(Product._id)} variant="outline-dark rounded-pill fw-bold">DELETE</Button></td>
+                            <tr className='row fw-bold'>
+                                <td className='text-center col-3'>{Product.name.slice(0, 30)}</td>
+                                <td className='text-center col-3 w-25'><img className='w-100' src={Product.picture} alt="" /></td>
+                                <td className='text-center col-3'>{Product.quantity}</td>
+                                <td className='text-center col-3'><Button onClick={() => handleDelete(Product._id)} variant="outline-warning rounded-pill fw-bold">DELETE</Button></td>
                             </tr>
                         </tbody>
                     )
                 }
             </Table>
             <div className='text-center'>
-                <Link to='/addProducts'><Button variant="outline-dark mb-5 rounded-pill fw-bold">ADD NEW COLLECTION</Button></Link>
+                <Link to='/addProducts'><Button variant="outline-warning mb-5 rounded-pill fw-bold">ADD NEW COLLECTION</Button></Link>
             </div>
         </div>
     );

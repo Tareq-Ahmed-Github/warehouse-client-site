@@ -8,7 +8,7 @@ const HomeProducts = () => {
 
     return (
         <div id='homeproducts'>
-            <h2 className='text-primary my-5 text-center'>INVENTORY</h2>
+            <h2 className='text-dark my-5 text-center'>INVENTORY</h2>
             <div className='products'>
 
                 {
