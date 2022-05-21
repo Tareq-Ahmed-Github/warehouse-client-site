@@ -5,7 +5,7 @@ import Social from './Social';
 const Signup = () => {
     return (
         <div>
-            <Form className='w-25 mx-auto border mt-5 rounded'>
+            <Form className='w-25 mx-auto border mt-5 rounded bg-dark text-white'>
                 <h2 className='text-bold mt-3'>Sign up</h2>
                 <Form.Group className="mb-3 mx-5 mt-5" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" />

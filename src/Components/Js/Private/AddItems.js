@@ -21,19 +21,19 @@ const AddItems = () => {
             });
     };
     return (
-        <div className='w-50  mx-auto border p-4 m-2' >
-            <h4>ADD ITEMS</h4>
+        <div className='w-50  mx-auto border p-4 m-2 bg-dark text-white' >
+            <h4 className='text-warning'>ADD ITEMS</h4>
             <form className='d-flex flex-column mb-2' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' value={user.displayName} placeholder='user' {...register("displayName", { required: true })} />
-                <input className='mb-2' value={user.email} placeholder='user' {...register("email", { required: true })} />
-                <input className='mb-2' placeholder='Enter Bike name' {...register("name", { required: true })} />
-                <input className='mb-2' placeholder='Enter Short description' {...register("description")} />
-                <input className='mb-2' placeholder='Photo URL' {...register("picture")} />
-                <input className='mb-2' placeholder='Enter Supplier Name' {...register("supplier")} />
-                <input className='mb-2' placeholder='Enter Price' type="number" {...register("FOBPrices")} />
-                <input className='mb-2' placeholder='Enter Quantity' type="number" {...register("quantity")} />
-                <input className='mb-2' placeholder='Enter MinOrder' type="number" {...register("MinOrder")} />
-                <input className='mb-2' type="submit" value="Add Item" />
+                <input className='mb-2 w-75 rounded-3 mx-auto' value={user.displayName} placeholder='user' {...register("displayName", { required: true })} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' value={user.email} placeholder='user' {...register("email", { required: true })} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter Bike name' {...register("name", { required: true })} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter Short description' {...register("description")} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Photo URL' {...register("picture")} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter Supplier Name' {...register("supplier")} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter Price' type="number" {...register("FOBPrices")} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter Quantity' type="number" {...register("quantity")} />
+                <input className='mb-2 w-75 rounded-3 mx-auto' placeholder='Enter MinOrder' type="number" {...register("MinOrder")} />
+                <input className='mb-2 rounded-pill bg-warning fw-bold w-25 mx-auto' type="submit" value="Add Item" />
             </form>
 
         </div>

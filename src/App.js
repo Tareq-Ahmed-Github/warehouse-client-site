@@ -12,6 +12,7 @@ import AddItems from './Components/Js/Private/AddItems';
 import MyItems from './Components/Js/Private/MyItems';
 import ManageItems from './Components/Js/Private/ManageProducts';
 import HomeProducts from './Components/Js/Home/HomeProducts';
+import MyStuff from './Components/Js/Home/MyStuff';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/homeproducts' element={<HomeProducts></HomeProducts>}></Route>
+        {/* <Route path='/mystuff' element={<MyStuff></MyStuff>}></Route> */}
         <Route path='/manageitems' element={
           <RequireAuth>
             <ManageItems></ManageItems>

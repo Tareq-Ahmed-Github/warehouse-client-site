@@ -8,8 +8,8 @@ const HomeProducts = () => {
 
     return (
         <div id='homeproducts'>
-            <h2 className='text-dark my-5 text-center'>INVENTORY</h2>
-            <div className='products'>
+            <h2 className='text-warning my-5 mx-auto'>INVENTORY</h2>
+            <div className='products w-75 mx-auto'>
 
                 {
                     homeProducts?.map(homeProduct => <Product

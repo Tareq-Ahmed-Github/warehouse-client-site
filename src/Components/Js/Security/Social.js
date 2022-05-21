@@ -35,7 +35,7 @@ const Social = () => {
     }
     return (
         <div>
-            <Button onClick={() => signInWithGoogle()} className='mb-5 rounded-pill bg-light'><img className='w-25' src="https://i.ibb.co/4mn5h7R/download-removebg-preview.png" alt="" /></Button>
+            <Button onClick={() => signInWithGoogle()} className='mb-5 rounded-pill bg-dark'><img className='w-25' src="https://i.ibb.co/4mn5h7R/download-removebg-preview.png" alt="" /></Button>
         </div>
     );
 };

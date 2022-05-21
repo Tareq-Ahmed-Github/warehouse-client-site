@@ -11,7 +11,7 @@ const MyItems = () => {
 
     return (
         <div>
-            <h2 className='text-primary text-center m-4'>MY Item</h2>
+            <h2 className='text-center m-4'>MY Item</h2>
             <div>
                 {
                     addItem?.map(item => <AddItem key={item._id}

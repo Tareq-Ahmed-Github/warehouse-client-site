@@ -11,9 +11,9 @@ const Product = ({ Product }) => {
     return (
         <div className='container'>
             <CardGroup className='row w-100'>
-                <Card className='col g-2'>
+                <Card className='col g-2 bg-dark text-white'>
                     <Card.Img variant="top" src={picture} />
-                    <Card.Body className='text-start'>
+                    <Card.Body className='text-start' style={{height:'300px'}}>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>
                             {description}
@@ -24,7 +24,7 @@ const Product = ({ Product }) => {
                         <h6> <span> MIN. ORDER:</span>  {MinOrder}<small>pics</small></h6>
                         <h6> <span> Supplier:</span>  {supplier}</h6>
                     </Card.Body>
-                    <Button onClick={() => navigateToProductDetail(_id)} className="rounded-pill fw-bold my-3 mx-5 bg-dark">UPDATE</Button>
+                    <Button onClick={() => navigateToProductDetail(_id)} className="rounded-pill fw-bold my-3 mx-5 bg-dark border-warning">UPDATE</Button>
                 </Card>
             </CardGroup>
         </div>
