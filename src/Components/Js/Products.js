@@ -1,5 +1,6 @@
 import useProducts from './UseProducts';
 import './../Css/Products.css';
+import './Product';
 const Products = () => {
     const [Products] = useProducts();
     return (

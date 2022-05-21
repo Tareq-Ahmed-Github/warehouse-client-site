@@ -10,7 +10,8 @@ import RequireAuth from './Components/Js/Security/RequireAuth';
 import Signup from './Components/Js/Security/Signup';
 import AddItems from './Components/Js/Private/AddItems';
 import MyItems from './Components/Js/Private/MyItems';
-import ManageItems from './Components/Js/Private/ManageItems';
+import ManageItems from './Components/Js/Private/ManageProducts';
+import HomeProducts from './Components/Js/Home/HomeProducts';
 
 function App() {
   return (
@@ -18,11 +19,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/products' element={
-          <RequireAuth>
-            <Products></Products>
-          </RequireAuth>}>
-        </Route>
+        <Route path='/homeproducts' element={<HomeProducts></HomeProducts>}></Route>
         <Route path='/manageitems' element={
           <RequireAuth>
             <ManageItems></ManageItems>

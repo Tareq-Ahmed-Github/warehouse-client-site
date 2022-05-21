@@ -27,18 +27,6 @@ const Product = ({ Product }) => {
                     <Button onClick={() => navigateToProductDetail(_id)} className="rounded-pill fw-bold my-3 mx-5 bg-dark">UPDATE</Button>
                 </Card>
             </CardGroup>
-            {/* <img className='w-100' src={picture} alt="" />
-            <div className='m-3'>
-                <h5>{name}</h5>
-                <p className='mb-3'>{description}</p>
-                <h6> <span> Available: </span> {quantity}pics</h6>
-                <h6> <span> Stock: </span> {quantity === 0 ? 'sold' : 'available'}</h6>
-                <h6> <span>FOB PRICES:</span> {FOBPrices}</h6>
-                <h6> <span> MIN. ORDER:</span>  {MinOrder}<small>pics</small></h6>
-                <h6> <span> Supplier:</span>  {supplier}</h6>
-
-                <Button onClick={() => navigateToProductDetail(_id)} variant="outline-dark rounded-pill fw-bold mt-5">UPDATE</Button>
-            </div> */}
         </div>
     );
 };
