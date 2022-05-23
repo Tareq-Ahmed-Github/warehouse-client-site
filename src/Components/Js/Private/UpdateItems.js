@@ -7,7 +7,7 @@ const UpdateItem = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/bikes/${itemsId}`
+        const url = `https://calm-lake-89877.herokuapp.com/bikes/${itemsId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -22,7 +22,7 @@ const UpdateItem = () => {
             // item.quantity = updateItems;
             // console.log(updateItems)
 
-            const url = `http://localhost:5000/bikes/${itemsId}`;
+            const url = `https://calm-lake-89877.herokuapp.com/bikes/${itemsId}`;
             console.log(url)
             fetch(url, {
                 method: 'PUT',
@@ -46,7 +46,7 @@ const UpdateItem = () => {
         Quantity = Quantity + parseInt(newQuantity);
         let updateItems = { Quantity };
         // send data to the server
-        const url = `http://localhost:5000/bikes/${itemsId}`;
+        const url = `https://calm-lake-89877.herokuapp.com/bikes/${itemsId}`;
         console.log(url)
         fetch(url, {
             method: 'PUT',

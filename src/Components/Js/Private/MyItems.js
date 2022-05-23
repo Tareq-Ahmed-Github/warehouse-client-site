@@ -4,7 +4,7 @@ import AddItem from './AddItem';
 const MyItems = () => {
     const [addItem, setAddItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://calm-lake-89877.herokuapp.com/order')
             .then(res => res.json())
             .then(data => setAddItem(data))
     }, [])

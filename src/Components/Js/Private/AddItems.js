@@ -7,7 +7,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        const url = `http://localhost:5000/order`;
+        const url = `https://calm-lake-89877.herokuapp.com/order`;
         fetch(url, {
             method: 'POST',
             headers: {

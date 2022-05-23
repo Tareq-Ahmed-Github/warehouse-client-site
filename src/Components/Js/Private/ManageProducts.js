@@ -8,7 +8,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Are you sure?');
         if (confirm) {
-            const url = `http://localhost:5000/bikes/${id}`
+            const url = `https://calm-lake-89877.herokuapp.com/bikes/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
