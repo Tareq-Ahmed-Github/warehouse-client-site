@@ -13,6 +13,7 @@ import ManageItems from './Components/Js/Private/ManageProducts';
 import MyStuff from './Components/Js/Home/MyStuff';
 import UpdateItems from './Components/Js/Private/UpdateItems';
 import Products from './Components/Js/Products';
+import NotFound from './Components/Js/NotFound';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
