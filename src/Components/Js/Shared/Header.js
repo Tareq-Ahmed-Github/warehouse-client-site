@@ -13,10 +13,10 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container hover>
-                    <Navbar.Brand href="/#home">BikeZone</Navbar.Brand>
+                    <Navbar.Brand href="/home">BikeZone</Navbar.Brand>
                     <Nav className="me-auto">
                         <Link className='me-2 text-decoration-none text-warning' to='/'>Home</Link>
-                        <Link className='me-2 text-decoration-none text-warning' to='/homeproducts'>Products</Link>
+                        <Link className='me-2 text-decoration-none text-warning' to='/products'>Products</Link>
                         <Link className='me-2 text-decoration-none text-warning' to='/blogs'>Blogs</Link>
                         {
                             user ? <Link className='me-2 text-decoration-none text-warning' to='/manageitems'>Manage Items</Link> : <p></p>

@@ -4,7 +4,7 @@ import AddItem from './AddItem';
 const MyItems = () => {
     const [addItem, setAddItem] = useState([])
     useEffect(() => {
-        fetch('items.json/order')
+        fetch('http://localhost:5000/order')
             .then(res => res.json())
             .then(data => setAddItem(data))
     }, [])

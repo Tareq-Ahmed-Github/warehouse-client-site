@@ -4,15 +4,15 @@ import Blogs from './Components/Js/Blogs';
 import Footer from './Components/Js/Shared/Footer';
 import Header from './Components/Js/Shared/Header';
 import Home from './Components/Js/Home/Home';
-import Products from './Components/Js/Products';
 import Login from './Components/Js/Security/Login';
 import RequireAuth from './Components/Js/Security/RequireAuth';
 import Signup from './Components/Js/Security/Signup';
 import AddItems from './Components/Js/Private/AddItems';
 import MyItems from './Components/Js/Private/MyItems';
 import ManageItems from './Components/Js/Private/ManageProducts';
-import HomeProducts from './Components/Js/Home/HomeProducts';
 import MyStuff from './Components/Js/Home/MyStuff';
+import UpdateItems from './Components/Js/Private/UpdateItems';
+import Products from './Components/Js/Products';
 
 function App() {
   return (
@@ -20,11 +20,21 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/homeproducts' element={<HomeProducts></HomeProducts>}></Route>
-        {/* <Route path='/mystuff' element={<MyStuff></MyStuff>}></Route> */}
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/products' element={
+          <RequireAuth>
+            <Products></Products>
+          </RequireAuth>
+        }></Route>
+        <Route path='/mystuff' element={<MyStuff></MyStuff>}></Route>
         <Route path='/manageitems' element={
           <RequireAuth>
             <ManageItems></ManageItems>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/products/:itemsId' element={
+          <RequireAuth>
+            <UpdateItems></UpdateItems>
           </RequireAuth>}>
         </Route>
         <Route path='/myitems' element={

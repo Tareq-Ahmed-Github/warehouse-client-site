@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const useProducts = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

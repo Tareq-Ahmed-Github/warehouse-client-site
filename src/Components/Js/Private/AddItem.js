@@ -1,11 +1,10 @@
 import React from 'react';
 
-
 const AddItem = ({ addItem }) => {
     const { name, picture, FOBPrices, MinOrder, description, quantity, supplier } = addItem;
 
     return (
-        <div className=' text-center'>
+        <div className=' text-center border w-50 mx-auto my-5'>
             <img className='w-100' src={picture} alt="" />
             <div className='m-3'>
                 <h5>{name}</h5>

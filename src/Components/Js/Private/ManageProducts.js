@@ -8,7 +8,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Are you sure?');
         if (confirm) {
-            const url = `items.json/${id}`
+            const url = `http://localhost:5000/bikes/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -44,7 +44,7 @@ const ManageProducts = () => {
                 }
             </Table>
             <div className='text-center'>
-                <Link to='/addProducts'><Button variant="outline-warning mb-5 rounded-pill fw-bold">ADD NEW COLLECTION</Button></Link>
+                <Link to='/additems'><Button variant="outline-warning mb-5 rounded-pill fw-bold">ADD NEW COLLECTION</Button></Link>
             </div>
         </div>
     );

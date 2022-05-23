@@ -3,11 +3,11 @@ import Product from '../Product';
 import useProducts from './../UseProducts';
 import './../../Css/Products.css';
 const HomeProducts = () => {
-    const [Products] = useProducts();
-    const homeProducts = Products.slice(0, 6);
+    const [products] = useProducts();
+    const homeProducts = products.slice(0, 6);
 
     return (
-        <div id='homeproducts' className='bg-black pb-5'>
+        <div className='bg-black pb-5'>
             <h2 className='text-warning py-5 mx-auto'>INVENTORY</h2>
             <div className='products w-75 mx-auto'>
 

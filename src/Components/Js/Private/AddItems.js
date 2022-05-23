@@ -7,7 +7,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        const url = `items.json/order`;
+        const url = `http://localhost:5000/order`;
         fetch(url, {
             method: 'POST',
             headers: {
